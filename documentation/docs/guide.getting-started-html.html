@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMART Template (v1.0.0-rc1)</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+		<link rel="stylesheet" href="../assets/css/docs/module.docs.page.guide.component.guide.getting-started-html.min.css" />
+	
+	<script src="../assets/library/jquery/jquery.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/library/jquery/jquery-migrate.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/library/modernizr/modernizr.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/plugins/core_less-js/less.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/plugins/charts_flot/excanvas.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/plugins/core_browser/ie/ie.prototype.polyfill.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/library/angular/angular.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+</head>
+<body id="docs">
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  	<div class="container">
+    	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      		<a class="navbar-brand" href="http://www.mosaicpro.biz" target="_blank"><img src="../assets/images/logo/logo.jpg" alt="" /></a>
+      		<a class="navbar-brand" href="guide.getting-started-html.html?v=v1.0.0-rc1">SMART</a>
+    	</div>
+    	<div class="navbar-collapse collapse">
+      		<ul class="nav navbar-nav">
+        		<li class="dropdown active">
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+          			<ul class="dropdown-menu">
+          									<li class="active"><a href="guide.getting-started-html.html?v=v1.0.0-rc1">HTML Guide</a></li>
+												<li><a href="guide.getting-started-php.html?v=v1.0.0-rc1">PHP Guide</a></li>
+						          			</ul>
+        		</li>
+                        		<li class="dropdown">
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+          			<ul class="dropdown-menu">
+          				<li class="dropdown-header">Components</li>
+
+                                    			<li><a href="filter.all.html?v=v1.0.0-rc1">All components</a></li>
+                                    			<li><a href="filter.core.html?v=v1.0.0-rc1">Core</a></li>
+                                    			<li><a href="filter.charts.html?v=v1.0.0-rc1">Charts</a></li>
+                                    			<li><a href="filter.forms.html?v=v1.0.0-rc1">Forms</a></li>
+                                    			<li><a href="filter.maps.html?v=v1.0.0-rc1">Maps</a></li>
+                                    			<li><a href="filter.media.html?v=v1.0.0-rc1">Media</a></li>
+                                    			<li><a href="filter.table.html?v=v1.0.0-rc1">Tables</a></li>
+                                    			<li><a href="filter.ui.html?v=v1.0.0-rc1">UI</a></li>
+                                    			<li><a href="filter.widget.html?v=v1.0.0-rc1">Widgets</a></li>
+                                    			<li><a href="filter.other.html?v=v1.0.0-rc1">Other</a></li>
+                        
+                        <li class="dropdown-header">Modules</li>
+
+            			                        <li><a href="filter.admin.html?v=v1.0.0-rc1">Admin</a></li>
+                        
+                        <!-- <li class="dropdown-header">Pages</li>
+                        <li><a href="">Demo pages</a></li> -->
+          			</ul>
+        		</li>
+      		</ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://www.mosaicpro.biz/blog/tutorials" target="_blank"><i class="fa fa-fw fa-file-text-o"></i> Online Guides</a></li>
+      		</ul>
+    	</div><!--/.nav-collapse -->
+  	</div>
+</div>
+
+<div class="container">
+
+				
+						
+				
+
+<h1>Getting Started - HTML Guide <a href="guide.getting-started-php.html?v=v1.0.0-rc1" class="btn btn-primary pull-right">Go to PHP Guide <i class="fa fa-arrow-right"></i></a></h1>
+<p class="lead">Overview, structure and description of SMART </p>
+<ol class="strong">
+    <li><a href="#guide-overview">Overview</a></li>
+    <li><a href="#guide-folder-structure">Folder Structure</a></li>
+    <li><a href="#guide-layout-menu">Layout &amp; Menus</a></li>
+    <li><a href="#guide-css-less">CSS &amp; LESS</a></li>
+    <li><a href="#guide-assets-structure">Assets Structure</a></li>
+    <li><a href="#guide-components">Components</a></li>
+</ol>
+				<br/>
+
+									
+						
+				
+
+<h2 id="guide-overview">1. Overview</h2>
+<div class="separator"></div>
+<p>SMART is a FLAT admin template on which we worked extensively to get a SMART admin that works on any modern browser, was tested out on various devices and is fully responsive adapting to any screen resolution.</p>
+<img src="../assets/images/docs-preview.jpg" class="img-responsive widget innerAll half"/>
+				<br/>
+
+									
+						
+				
+<h2 id="guide-folder-structure">2. Folder Structure</h2>
+<div class="separator"></div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, culpa, ex. Accusantium adipisci architecto assumenda at consequatur, delectus distinctio eius enim error eveniet fuga illo illum impedit ipsam iure labore laboriosam magnam minima perspiciatis placeat praesentium quo reiciendis reprehenderit suscipit ullam unde vel voluptatem. Adipisci aliquam dolores in incidunt iure iusto laboriosam maiores, officiis rem tenetur velit veritatis, voluptate voluptatum?</p>
+<div class="separator"></div>
+<pre class"prettyprint">smart/
+└── non-ajax/
+    ├── assets/
+    │   ├── components/
+    │   ├── library/
+    │   ├── plugins/
+    │   ├── css/
+    │   ├── less/
+    └── admin_fixed/
+    └── admin_fluid/
+└── ajax/
+    ├── assets/
+    │   ├── components/
+    │   ├── library/
+    │   ├── plugins/
+    │   ├── css/
+    │   ├── less/
+    └── admin_fixed/
+    └── admin_fluid/
+
+
+</pre>
+
+
+				<br/>
+
+									
+						
+				
+<h2 id="guide-layout-menu">3. Layouts & Menus</h2>
+<div class="separator"></div>
+
+
+<h3><strong>Header</strong></h3>
+<p>Include this in every page of your site</p>
+
+<pre class="prettyprint">&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7]&gt; &lt;html class=&quot;ie lt-ie9 lt-ie8 lt-ie7 sidebar sidebar-fusion footer-sticky&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;    &lt;html class=&quot;ie lt-ie9 lt-ie8 sidebar sidebar-fusion footer-sticky&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;    &lt;html class=&quot;ie lt-ie9 sidebar sidebar-fusion footer-sticky&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt; &lt;html class=&quot;ie sidebar sidebar-fusion footer-sticky&quot;&gt; &lt;![endif]--&gt;
+
+&lt;!--[if !IE]&gt;&lt;!--&gt;
+&lt;html class=&quot;sidebar sidebar-fusion footer-sticky&quot;&gt;
+&lt;!-- &lt;![endif]--&gt;
+
+&lt;head&gt;
+    &lt;title&gt;SMART&lt;/title&gt;
+    &lt;!-- Meta --&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0&quot;&gt;
+
+    &lt;!--[if lt IE 9]&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/components/library/bootstrap/css/bootstrap.min.css&quot; /&gt;
+    &lt;![endif]--&gt;
+
+    &lt;!--  Stylesheet Complete CSS compiled from ../assets/css/admin/module.admin.stylesheet-complete.less --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/css/admin/module.admin.stylesheet-complete.min.css&quot;/&gt;
+
+    &lt;!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;
+        &lt;!--[if lt IE 9]&gt;
+        &lt;script src=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js&quot;&gt;&lt;/script&gt;
+        &lt;![endif]--&gt;
+
+    &lt;!-- HEADER SCRIPTS GO HERE --&gt;
+
+    &lt;script&gt;
+        if ( /*@cc_on!@*/ false &amp;&amp; document.documentMode === 10)
+        {
+            document.documentElement.className += ' ie ie10';
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+</pre>
+<div class="separator"></div>
+<h3><strong>Body Content & Footer</strong></h3>
+<p>Structure of the important wrappers within the body tag.</p>
+<div class="separator"></div>
+<h5>Body for LAYOUT FLUID:</h5>
+<div class="separator"></div>
+<pre class="prettyprint">&lt;body&gt;
+
+    &lt;div class=&quot;container-fluid menu-hidden&quot;&gt;
+        &lt;!-- SIDEBAR MENU --&gt;
+
+        &lt;div id=&quot;content&quot;&gt;
+            &lt;!-- NAVBAR HERE --&gt;
+        &lt;/div&gt;
+
+        &lt;!-- FOOTER HERE --&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- REQUIRED VARIABLES SCRIPTS --&gt;
+
+    &lt;!-- FOOTER SCRIPTS --&gt;
+
+&lt;/body&gt;
+
+</pre>
+<div class="separator"></div>
+<h5><strong>Footer</strong></h5>
+
+<pre class="prettyprint">&lt;div id=&quot;footer&quot; class=&quot;hidden-print&quot;&gt;
+    &lt;div class=&quot;copy&quot;&gt; &lt;!-- Copyright HERE--&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+<div class="separator"></div>
+<h5><strong>Required JavaScript Global Variables</strong></h5>
+<p>Required Variables used by different scripts and components throughout the template.</p>
+<pre class="prettyprint">
+&lt;script data-id=&quot;App.Config&quot;&gt;
+    var App = {};
+    var basePath = '',
+        commonPath = '../assets/',
+        rootPath = '../',
+        DEV = false,
+        componentsPath = '../assets/components/';
+    var primaryColor = '#c72a25',
+        dangerColor = '#b55151',
+        successColor = '#609450',
+        infoColor = '#4a8bc2',
+        warningColor = '#ab7a4b',
+        inverseColor = '#45484d';
+    var themerPrimaryColor = primaryColor;
+&lt;/script&gt;
+
+</pre>
+
+<div class="separator"></div>
+<h3><strong>Sidebar Menu (Used in Fluid Layout)</strong></h3>
+<p>Structure of the Sidebar Menu</p>
+
+<pre class="prettyprint">&lt;div id=&quot;menu&quot; class=&quot;hidden-print hidden-xs&quot;&gt;
+    &lt;div id=&quot;sidebar-fusion-wrapper&quot;&gt;
+
+        &lt;!-- SEARCH START --&gt;
+        &lt;div id=&quot;searchWrapper&quot;&gt;
+            &lt;input class=&quot;form-control search&quot; type=&quot;text&quot; placeholder=&quot;Search...&quot;&gt;
+        &lt;/div&gt;
+        &lt;!-- // SEARCH END --&gt;
+
+        &lt;!-- USER START --&gt;
+        &lt;div id=&quot;logoWrapper&quot;&gt;
+            &lt;div class=&quot;media&quot;&gt;
+                &lt;a href=&quot;&quot; class=&quot;pull-left&quot;&gt;&lt;img src=&quot;../assets/images/people/50/2.jpg&quot; alt=&quot;&quot; class=&quot;img-circle&quot; &gt;&lt;/a&gt;
+                &lt;div class=&quot;media-body&quot;&gt;
+                    &lt;a href=&quot;&quot; class=&quot;name&quot;&gt;Adrian D.&lt;/a&gt;
+                    &lt;p class=&quot;&quot;&gt;&lt;i class=&quot;fa fa-fw fa-circle-o text-success&quot;&gt;&lt;/i&gt; Online&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-xs btn-inverse &quot;&gt;&lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-xs btn-inverse &quot;&gt;&lt;i class=&quot;fa fa-wrench&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-xs btn-inverse &quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;
+
+            &lt;!-- DROPDOWN START --&gt;
+            &lt;select class=&quot;selectpicker&quot; data-style=&quot;btn-inverse&quot;&gt;
+                &lt;option&gt;Project Name&lt;/option&gt;
+                &lt;option&gt;Project 2&lt;/option&gt;
+                &lt;option&gt;Project 3&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;!-- // END DROPDOWN --&gt;
+
+        &lt;/div&gt;
+        &lt;!-- // END USER  --&gt;
+
+        &lt;!-- MENU --&gt;
+        &lt;ul class=&quot;menu list-unstyled&quot;&gt;
+
+            &lt;!-- MENU BUTTONS &amp; DROPDOWNS--&gt;
+            &lt;li class=&quot;category&quot;&gt;Navigation&lt;/li&gt;
+
+            &lt;!-- EXAMPLE OF 2 LEVEL COLLAPSE--&gt;
+            &lt;li class=&quot;hasSubmenu active&quot;&gt;
+                &lt;a href=&quot;#unqiue-ref&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i class=&quot;icon-tv&quot;&gt;&lt;/i&gt;&lt;span&gt; Button&lt;/span&gt;&lt;/a&gt;
+                &lt;ul id=&quot;unqiue-ref&quot; class=&quot;collapse&quot;&gt;
+                    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle-o&quot;&gt;&lt;/i&gt;&lt;span&gt;Submenu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle-o&quot;&gt;&lt;/i&gt;&lt;span&gt;Submenu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;hasSubmenu&quot;&gt;
+                        &lt;a href=&quot;#unique-submenu-ref&quot; data-toggle=&quot;collapse&quot;&gt;
+                            &lt;span class=&quot;badge badge-primary pull-right&quot;&gt;3&lt;/span&gt;
+                            &lt;i class=&quot;fa fa-circle-o&quot;&gt;&lt;/i&gt; 2nd Level Submenu
+                        &lt;/a&gt;
+                        &lt;ul class=&quot;collapse&quot; id=&quot;unique-submenu-ref&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+
+            &lt;!-- RESET the list item to allow custom content within the sidebar --&gt;
+            &lt;li class=&quot;reset&quot;&gt;Any content here&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<div class="widget bg-gray innerAll">Please note the <strong>toggle button</strong> for the sidebar resides within the NAVBAR bars icon on the left will appear on mobile view. For viewing the required styling and scripts go to "../assets/component/menus/"</div>
+<div class="separator"></div>
+
+<h3>Navbar</h3>
+<pre class="prettyprint">
+&lt;div class=&quot;navbar hidden-print main navbar-default&quot; role=&quot;navigation&quot;&gt;
+    &lt;!--  RIGHT TOGGLE BUTTON FOR SIDEBAR MENU--&gt;
+    &lt;div class=&quot;user-action user-action-btn-navbar pull-right&quot;&gt;
+        &lt;button class=&quot;btn btn-sm btn-navbar btn-inverse btn-stroke hidden-lg hidden-md&quot;&gt;&lt;i class=&quot;fa fa-bars fa-2x&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;!-- LOGO --&gt;
+    &lt;a href=&quot;index.html&quot; class=&quot;logo&quot;&gt;
+        &lt;img src=&quot;../assets/images/logo/logo.jpg&quot; width=&quot;32&quot;/&gt;
+        &lt;span class=&quot;hidden-xs hidden-sm inline-block&quot;&gt;&lt;span&gt;mosaic&lt;/span&gt;pro&lt;/span&gt;&lt;/span&gt;
+    &lt;/a&gt;
+
+    &lt;!-- ICON WITH DROPDOWN FOR NOTIFICATIONS    --&gt;
+    &lt;ul class=&quot;main pull-left hidden-xs &quot;&gt;
+        &lt;li class=&quot;dropdown notif notifications hidden-xs&quot;&gt;
+            &lt;a href=&quot;&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt; &lt;span class=&quot;badge badge-danger&quot;&gt;5&lt;/span&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu chat media-list&quot;&gt;
+                &lt;li class=&quot;media&quot;&gt;
+                    &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;media-object thumb&quot; src=&quot;../assets/images/people/100/15.jpg&quot; alt=&quot;50x50&quot; width=&quot;50&quot;/&gt;&lt;/a&gt;
+                    &lt;div class=&quot;media-body&quot;&gt;
+                        &lt;span class=&quot;label label-default pull-right&quot;&gt;5 min&lt;/span&gt;
+                        &lt;h5 class=&quot;media-heading hidden-xs&quot;&gt;Adrian D.&lt;/h5&gt;
+                        &lt;p class=&quot;margin-none&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;media&quot;&gt;
+                    &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;media-object thumb&quot; src=&quot;../assets/images/people/100/16.jpg&quot; alt=&quot;50x50&quot; width=&quot;50&quot;/&gt;&lt;/a&gt;
+                    &lt;div class=&quot;media-body&quot;&gt;
+                        &lt;span class=&quot;label label-default pull-right&quot;&gt;2 days&lt;/span&gt;
+                        &lt;h5 class=&quot;media-heading&quot;&gt;Jane B.&lt;/h5&gt;
+                        &lt;p class=&quot;margin-none&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;media&quot;&gt;
+                    &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;media-object thumb&quot; src=&quot;../assets/images/people/100/17.jpg&quot; alt=&quot;50x50&quot; width=&quot;50&quot;/&gt;&lt;/a&gt;
+                    &lt;div class=&quot;media-body&quot;&gt;
+                        &lt;span class=&quot;label label-default pull-right&quot;&gt;3 days&lt;/span&gt;
+                        &lt;h5 class=&quot;media-heading&quot;&gt;Andrew M.&lt;/h5&gt;
+                        &lt;p class=&quot;margin-none&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fa fa-list&quot;&gt;&lt;/i&gt; &lt;span&gt;View all messages&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;notifications&quot;&gt;
+            &lt;a href=&quot;&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt; &lt;span class=&quot;badge badge-warning&quot;&gt;7&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;notifications&quot;&gt;
+            &lt;a href=&quot;&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; &lt;span class=&quot;badge badge-info&quot;&gt;2&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!-- RIGHT SIDE OF MENU --&gt;
+    &lt;ul class=&quot;main pull-right&quot;&gt;
+        &lt;!-- CREATE TASK REGULAR BUTTON  --&gt;
+        &lt;li class=&quot;hidden-xs hidden-sm&quot;&gt;&lt;a href=&quot;&quot; class=&quot;btn btn-info&quot;&gt;Create Task  &lt;i class=&quot;fa fa-fw icon-compose&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+
+        &lt;!-- STATS --&gt;
+        &lt;li class=&quot;hidden-xs&quot;&gt;Completed Tasks:  &lt;strong class=&quot;text-primary&quot;&gt;24&lt;/strong&gt;&lt;/li&gt;
+
+        &lt;!-- USER DROPDOWN --&gt;
+        &lt;li class=&quot;dropdown username hidden-xs &quot;&gt;
+            &lt;a href=&quot;&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;img src=&quot;../assets/images/people/35/22.jpg&quot; class=&quot;img-circle&quot;/&gt; Adrian D. &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+
+            &lt;ul class=&quot;dropdown-menu pull-right&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot; class=&quot;glyphicons user&quot;&gt;&lt;i&gt;&lt;/i&gt; Account&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot; class=&quot;glyphicons envelope&quot;&gt;&lt;i&gt;&lt;/i&gt;Messages&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot; class=&quot;glyphicons settings&quot;&gt;&lt;i&gt;&lt;/i&gt;Settings&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;login.html&quot; class=&quot;glyphicons lock no-ajaxify&quot;&gt;&lt;i&gt;&lt;/i&gt;Logout&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+</pre>
+
+
+				<br/>
+
+									
+						
+				
+<h2 id="guide-css-less">4. CSS &amp; LESS</h2>
+<div class="separator"></div>
+<div class="alert alert-danger strong"> <i class="fa fa-info-circle fa-fw fa-2x pull-left innerT half"></i> By default, SMART is loading a complete stylesheet file that contains all the styles needed for the entire template, which is located within the <code>less/module_name</code> folder.</div>
+<div class="separator"></div>
+<p> For example, the <strong>assets/less/admin/module.admin.stylesheet-complete.less </strong> used by the admin module, might contain something like this:</p>
+<div class="separator"></div>
+<pre class="prettyprint">// Example of stylesheet complete contents
+@import '../../../assets/components/menus/navbar.main.less';
+@import '../../../assets/components/menus/skin.colors.less';
+@import '../../../assets/components/ui_breadcrumb/breadcrumb.less';
+@import '../../../assets/components/ui_forms/forms.less';
+@import '../../../assets/components/ui_labels/labels.less';
+...
+</pre>
+    <p>The imports represent all the style assets used by over 300 components included with the template.</p>
+				<br/>
+
+									
+						
+				
+<h2 id="guide-assets-structure">5. Assets Structure</h2>
+
+<div class="separator"></div>
+<p> The assets is structured in a specific modular way.</p>
+<div class="separator"></div>
+<pre class="prettyprint">smart/
+
+└── assets/
+    │   // Library includes core frameworks like Bootstrap, jQuery, jQuery UI, Modernizr etc.
+    └── library/
+    │
+    │   // Plugins like jQuery Plugins, Bootstrap Plugins, etc
+    └── plugins/
+    │
+    │   // Custom Javascript &amp; Styling
+    └── components/
+        │
+        │   // As a general rule of thumb, component folders are named by the following
+        │   // convention: {module_or_page_name}_{component_categories}_{component_name}
+        └── component_name/
+                    └── &lt;custom javascript&gt;
+                    └── &lt;custom style&gt;
+
+
+</pre>
+
+
+				<br/>
+
+									
+						
+				
+<h2 id="guide-components">6. Components</h2>
+
+<p class="lead">A component is a group of resources needed to render a specific element.</p>
+<hr/>
+<div class="separator"></div>
+<p>SMART contains hundreds of components for various purposes. <a class="btn btn-primary" href="filter.all.html?v=v1.0.0-rc1">Browse Components <i class="fa fa-arrow-right"></i></a></p>				<br/>
+
+						
+</div>
+<!-- // END CONTAINER -->
+
+    <!-- Global -->
+    <script data-id="App.Config">
+        var App = {};        var basePath = '',
+            commonPath = '../assets/',
+            rootPath = '../',
+            DEV = false,
+            componentsPath = '../assets/components/';
+
+        var primaryColor = '#c72a25',
+            dangerColor = '#b55151',
+            successColor = '#609450',
+            infoColor = '#4a8bc2',
+            warningColor = '#ab7a4b',
+            inverseColor = '#45484d';
+
+        var themerPrimaryColor = primaryColor;
+
+            </script>
+
+    <script src="../assets/library/bootstrap/js/bootstrap.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/plugins/core_preload/pace.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core_preload/preload.pace.init.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core_docs/docs/assets/angular/app/ng.app.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core_docs/assets/angular/filters/ng.filter.isarray.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core_docs/assets/angular/controllers/ng.ctrl.components.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core_docs/docs/assets/angular/directives/ng.docs.directive.components.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/plugins/core_prettyprint/js/prettify.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core/core.init.js?v=v1.0.0-rc1"></script>
+</body>
+</html>

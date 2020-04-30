@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>guide.3.getting-started-html.layout_menu example | SMART (v1.0.0-rc1)</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+		<link rel="stylesheet" href="../../assets/css/docs/module.examples.page.guide.3.getting-started-html.layout_menu.min.css" />
+	
+	<script src="../../assets/library/jquery/jquery.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../../assets/library/jquery/jquery-migrate.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../../assets/library/modernizr/modernizr.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../../assets/plugins/core_less-js/less.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../../assets/plugins/charts_flot/excanvas.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../../assets/plugins/core_browser/ie/ie.prototype.polyfill.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+</head>
+<body id="examples">
+
+	<div class="container">
+		<div class="innerTB">
+
+			<div class="jumbotron">
+				<h1 class="separator bottom">guide.3.getting-started-html.layout_menu example</h1>
+				<p class="lead">This is an example page that loads strictly the minimal core styles &amp; scripts required by <strong>SMART</strong> and the <strong>guide.3.getting-started-html.layout_menu component</strong></p>
+			</div>
+
+<h2 id="guide-layout-menu">3. Layouts & Menus</h2>
+<div class="separator"></div>
+
+
+<h3><strong>Header</strong></h3>
+<p>Include this in every page of your site</p>
+
+<pre class="prettyprint">&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7]&gt; &lt;html class=&quot;ie lt-ie9 lt-ie8 lt-ie7 sidebar sidebar-fusion footer-sticky&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;    &lt;html class=&quot;ie lt-ie9 lt-ie8 sidebar sidebar-fusion footer-sticky&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;    &lt;html class=&quot;ie lt-ie9 sidebar sidebar-fusion footer-sticky&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt; &lt;html class=&quot;ie sidebar sidebar-fusion footer-sticky&quot;&gt; &lt;![endif]--&gt;
+
+&lt;!--[if !IE]&gt;&lt;!--&gt;
+&lt;html class=&quot;sidebar sidebar-fusion footer-sticky&quot;&gt;
+&lt;!-- &lt;![endif]--&gt;
+
+&lt;head&gt;
+    &lt;title&gt;SMART&lt;/title&gt;
+    &lt;!-- Meta --&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0&quot;&gt;
+
+    &lt;!--[if lt IE 9]&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/components/library/bootstrap/css/bootstrap.min.css&quot; /&gt;
+    &lt;![endif]--&gt;
+
+    &lt;!--  Stylesheet Complete CSS compiled from ../assets/css/admin/module.admin.stylesheet-complete.less --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/css/admin/module.admin.stylesheet-complete.min.css&quot;/&gt;
+
+    &lt;!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;
+        &lt;!--[if lt IE 9]&gt;
+        &lt;script src=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js&quot;&gt;&lt;/script&gt;
+        &lt;![endif]--&gt;
+
+    &lt;!-- HEADER SCRIPTS GO HERE --&gt;
+
+    &lt;script&gt;
+        if ( /*@cc_on!@*/ false &amp;&amp; document.documentMode === 10)
+        {
+            document.documentElement.className += ' ie ie10';
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+</pre>
+<div class="separator"></div>
+<h3><strong>Body Content & Footer</strong></h3>
+<p>Structure of the important wrappers within the body tag.</p>
+<div class="separator"></div>
+<h5>Body for LAYOUT FLUID:</h5>
+<div class="separator"></div>
+<pre class="prettyprint">&lt;body&gt;
+
+    &lt;div class=&quot;container-fluid menu-hidden&quot;&gt;
+        &lt;!-- SIDEBAR MENU --&gt;
+
+        &lt;div id=&quot;content&quot;&gt;
+            &lt;!-- NAVBAR HERE --&gt;
+        &lt;/div&gt;
+
+        &lt;!-- FOOTER HERE --&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- REQUIRED VARIABLES SCRIPTS --&gt;
+
+    &lt;!-- FOOTER SCRIPTS --&gt;
+
+&lt;/body&gt;
+
+</pre>
+<div class="separator"></div>
+<h5><strong>Footer</strong></h5>
+
+<pre class="prettyprint">&lt;div id=&quot;footer&quot; class=&quot;hidden-print&quot;&gt;
+    &lt;div class=&quot;copy&quot;&gt; &lt;!-- Copyright HERE--&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+<div class="separator"></div>
+<h5><strong>Required JavaScript Global Variables</strong></h5>
+<p>Required Variables used by different scripts and components throughout the template.</p>
+<pre class="prettyprint">
+&lt;script data-id=&quot;App.Config&quot;&gt;
+    var App = {};
+    var basePath = '',
+        commonPath = '../assets/',
+        rootPath = '../',
+        DEV = false,
+        componentsPath = '../assets/components/';
+    var primaryColor = '#c72a25',
+        dangerColor = '#b55151',
+        successColor = '#609450',
+        infoColor = '',
+        warningColor = '#ab7a4b',
+        inverseColor = '#45484d';
+    var themerPrimaryColor = primaryColor;
+&lt;/script&gt;
+
+</pre>
+
+<div class="separator"></div>
+<h3><strong>Sidebar Menu (Used in Fluid Layout)</strong></h3>
+<p>Structure of the Sidebar Menu</p>
+
+<pre class="prettyprint">&lt;div id=&quot;menu&quot; class=&quot;hidden-print hidden-xs&quot;&gt;
+    &lt;div id=&quot;sidebar-fusion-wrapper&quot;&gt;
+
+        &lt;!-- SEARCH START --&gt;
+        &lt;div id=&quot;searchWrapper&quot;&gt;
+            &lt;input class=&quot;form-control search&quot; type=&quot;text&quot; placeholder=&quot;Search...&quot;&gt;
+        &lt;/div&gt;
+        &lt;!-- // SEARCH END --&gt;
+
+        &lt;!-- USER START --&gt;
+        &lt;div id=&quot;logoWrapper&quot;&gt;
+            &lt;div class=&quot;media&quot;&gt;
+                &lt;a href=&quot;&quot; class=&quot;pull-left&quot;&gt;&lt;img src=&quot;../assets/images/people/50/2.jpg&quot; alt=&quot;&quot; class=&quot;img-circle&quot; &gt;&lt;/a&gt;
+                &lt;div class=&quot;media-body&quot;&gt;
+                    &lt;a href=&quot;&quot; class=&quot;name&quot;&gt;Adrian D.&lt;/a&gt;
+                    &lt;p class=&quot;&quot;&gt;&lt;i class=&quot;fa fa-fw fa-circle-o text-success&quot;&gt;&lt;/i&gt; Online&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-xs btn-inverse &quot;&gt;&lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-xs btn-inverse &quot;&gt;&lt;i class=&quot;fa fa-wrench&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-xs btn-inverse &quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;
+
+            &lt;!-- DROPDOWN START --&gt;
+            &lt;select class=&quot;selectpicker&quot; data-style=&quot;btn-inverse&quot;&gt;
+                &lt;option&gt;Project Name&lt;/option&gt;
+                &lt;option&gt;Project 2&lt;/option&gt;
+                &lt;option&gt;Project 3&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;!-- // END DROPDOWN --&gt;
+
+        &lt;/div&gt;
+        &lt;!-- // END USER  --&gt;
+
+        &lt;!-- MENU --&gt;
+        &lt;ul class=&quot;menu list-unstyled&quot;&gt;
+
+            &lt;!-- MENU BUTTONS &amp; DROPDOWNS--&gt;
+            &lt;li class=&quot;category&quot;&gt;Navigation&lt;/li&gt;
+
+            &lt;!-- EXAMPLE OF 2 LEVEL COLLAPSE--&gt;
+            &lt;li class=&quot;hasSubmenu active&quot;&gt;
+                &lt;a href=&quot;#unqiue-ref&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i class=&quot;icon-tv&quot;&gt;&lt;/i&gt;&lt;span&gt; Button&lt;/span&gt;&lt;/a&gt;
+                &lt;ul id=&quot;unqiue-ref&quot; class=&quot;collapse&quot;&gt;
+                    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle-o&quot;&gt;&lt;/i&gt;&lt;span&gt;Submenu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle-o&quot;&gt;&lt;/i&gt;&lt;span&gt;Submenu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;hasSubmenu&quot;&gt;
+                        &lt;a href=&quot;#unique-submenu-ref&quot; data-toggle=&quot;collapse&quot;&gt;
+                            &lt;span class=&quot;badge badge-primary pull-right&quot;&gt;3&lt;/span&gt;
+                            &lt;i class=&quot;fa fa-circle-o&quot;&gt;&lt;/i&gt; 2nd Level Submenu
+                        &lt;/a&gt;
+                        &lt;ul class=&quot;collapse&quot; id=&quot;unique-submenu-ref&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+
+            &lt;!-- RESET the list item to allow custom content within the sidebar --&gt;
+            &lt;li class=&quot;reset&quot;&gt;Any content here&lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<div class="widget bg-gray innerAll">Please note the <strong>toggle button</strong> for the sidebar resides within the NAVBAR bars icon on the left will appear on mobile view. For viewing the required styling and scripts go to "../assets/component/menus/"</div>
+<div class="separator"></div>
+
+<h3>Navbar</h3>
+<pre class="prettyprint">
+&lt;div class=&quot;navbar hidden-print main navbar-default&quot; role=&quot;navigation&quot;&gt;
+    &lt;!--  RIGHT TOGGLE BUTTON FOR SIDEBAR MENU--&gt;
+    &lt;div class=&quot;user-action user-action-btn-navbar pull-right&quot;&gt;
+        &lt;button class=&quot;btn btn-sm btn-navbar btn-inverse btn-stroke hidden-lg hidden-md&quot;&gt;&lt;i class=&quot;fa fa-bars fa-2x&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;!-- LOGO --&gt;
+    &lt;a href=&quot;index.html&quot; class=&quot;logo&quot;&gt;
+        &lt;img src=&quot;../../assets/images/logo/logo.jpg&quot; width=&quot;32&quot;/&gt;
+        &lt;span class=&quot;hidden-xs hidden-sm inline-block&quot;&gt;&lt;span&gt;mosaic&lt;/span&gt;pro&lt;/span&gt;&lt;/span&gt;
+    &lt;/a&gt;
+
+    &lt;!-- ICON WITH DROPDOWN FOR NOTIFICATIONS    --&gt;
+    &lt;ul class=&quot;main pull-left hidden-xs &quot;&gt;
+        &lt;li class=&quot;dropdown notif notifications hidden-xs&quot;&gt;
+            &lt;a href=&quot;&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt; &lt;span class=&quot;badge badge-danger&quot;&gt;5&lt;/span&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu chat media-list&quot;&gt;
+                &lt;li class=&quot;media&quot;&gt;
+                    &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;media-object thumb&quot; src=&quot;../../assets/images/people/100/15.jpg&quot; alt=&quot;50x50&quot; width=&quot;50&quot;/&gt;&lt;/a&gt;
+                    &lt;div class=&quot;media-body&quot;&gt;
+                        &lt;span class=&quot;label label-default pull-right&quot;&gt;5 min&lt;/span&gt;
+                        &lt;h5 class=&quot;media-heading hidden-xs&quot;&gt;Adrian D.&lt;/h5&gt;
+                        &lt;p class=&quot;margin-none&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;media&quot;&gt;
+                    &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;media-object thumb&quot; src=&quot;../../assets/images/people/100/16.jpg&quot; alt=&quot;50x50&quot; width=&quot;50&quot;/&gt;&lt;/a&gt;
+                    &lt;div class=&quot;media-body&quot;&gt;
+                        &lt;span class=&quot;label label-default pull-right&quot;&gt;2 days&lt;/span&gt;
+                        &lt;h5 class=&quot;media-heading&quot;&gt;Jane B.&lt;/h5&gt;
+                        &lt;p class=&quot;margin-none&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;media&quot;&gt;
+                    &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;media-object thumb&quot; src=&quot;../../assets/images/people/100/17.jpg&quot; alt=&quot;50x50&quot; width=&quot;50&quot;/&gt;&lt;/a&gt;
+                    &lt;div class=&quot;media-body&quot;&gt;
+                        &lt;span class=&quot;label label-default pull-right&quot;&gt;3 days&lt;/span&gt;
+                        &lt;h5 class=&quot;media-heading&quot;&gt;Andrew M.&lt;/h5&gt;
+                        &lt;p class=&quot;margin-none&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fa fa-list&quot;&gt;&lt;/i&gt; &lt;span&gt;View all messages&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;notifications&quot;&gt;
+            &lt;a href=&quot;&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt; &lt;span class=&quot;badge badge-warning&quot;&gt;7&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;notifications&quot;&gt;
+            &lt;a href=&quot;&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; &lt;span class=&quot;badge badge-info&quot;&gt;2&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!-- RIGHT SIDE OF MENU --&gt;
+    &lt;ul class=&quot;main pull-right&quot;&gt;
+        &lt;!-- CREATE TASK REGULAR BUTTON  --&gt;
+        &lt;li class=&quot;hidden-xs hidden-sm&quot;&gt;&lt;a href=&quot;&quot; class=&quot;btn btn-info&quot;&gt;Create Task  &lt;i class=&quot;fa fa-fw icon-compose&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+
+        &lt;!-- STATS --&gt;
+        &lt;li class=&quot;hidden-xs&quot;&gt;Completed Tasks:  &lt;strong class=&quot;text-primary&quot;&gt;24&lt;/strong&gt;&lt;/li&gt;
+
+        &lt;!-- USER DROPDOWN --&gt;
+        &lt;li class=&quot;dropdown username hidden-xs &quot;&gt;
+            &lt;a href=&quot;&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;img src=&quot;../../assets/images/people/35/22.jpg&quot; class=&quot;img-circle&quot;/&gt; Adrian D. &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+
+            &lt;ul class=&quot;dropdown-menu pull-right&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot; class=&quot;glyphicons user&quot;&gt;&lt;i&gt;&lt;/i&gt; Account&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot; class=&quot;glyphicons envelope&quot;&gt;&lt;i&gt;&lt;/i&gt;Messages&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot; class=&quot;glyphicons settings&quot;&gt;&lt;i&gt;&lt;/i&gt;Settings&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;login.html&quot; class=&quot;glyphicons lock no-ajaxify&quot;&gt;&lt;i&gt;&lt;/i&gt;Logout&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+</pre>
+
+
+
+    </div>
+</div>
+
+    <!-- Global -->
+    <script data-id="App.Config">
+        var App = {};        var basePath = '',
+            commonPath = '../../assets/',
+            rootPath = '../../',
+            DEV = false,
+            componentsPath = '../../assets/components/';
+
+        var primaryColor = '#c72a25',
+            dangerColor = '#b55151',
+            successColor = '#609450',
+            infoColor = '',
+            warningColor = '#ab7a4b',
+            inverseColor = '#45484d';
+
+        var themerPrimaryColor = primaryColor;
+
+            </script>
+
+    <script src="../../assets/library/bootstrap/js/bootstrap.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+</body>
+</html>

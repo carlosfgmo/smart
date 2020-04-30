@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMART Template (v1.0.0-rc1)</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+		<link rel="stylesheet" href="../assets/css/docs/module.docs.page.index.component.courses_list.min.css" />
+	
+	<script src="../assets/library/jquery/jquery.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/library/jquery/jquery-migrate.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/library/modernizr/modernizr.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/plugins/core_less-js/less.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/plugins/charts_flot/excanvas.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/plugins/core_browser/ie/ie.prototype.polyfill.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/library/angular/angular.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+</head>
+<body id="docs">
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  	<div class="container">
+    	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      		<a class="navbar-brand" href="http://www.mosaicpro.biz" target="_blank"><img src="../assets/images/logo/logo.jpg" alt="" /></a>
+      		<a class="navbar-brand" href="guide.getting-started-html.html?v=v1.0.0-rc1">SMART</a>
+    	</div>
+    	<div class="navbar-collapse collapse">
+      		<ul class="nav navbar-nav">
+        		<li class="dropdown">
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+          			<ul class="dropdown-menu">
+          									<li><a href="guide.getting-started-html.html?v=v1.0.0-rc1">HTML Guide</a></li>
+												<li><a href="guide.getting-started-php.html?v=v1.0.0-rc1">PHP Guide</a></li>
+						          			</ul>
+        		</li>
+                        		<li class="dropdown">
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+          			<ul class="dropdown-menu">
+          				<li class="dropdown-header">Components</li>
+
+                                    			<li><a href="filter.all.html?v=v1.0.0-rc1">All components</a></li>
+                                    			<li><a href="filter.core.html?v=v1.0.0-rc1">Core</a></li>
+                                    			<li><a href="filter.charts.html?v=v1.0.0-rc1">Charts</a></li>
+                                    			<li><a href="filter.forms.html?v=v1.0.0-rc1">Forms</a></li>
+                                    			<li><a href="filter.maps.html?v=v1.0.0-rc1">Maps</a></li>
+                                    			<li><a href="filter.media.html?v=v1.0.0-rc1">Media</a></li>
+                                    			<li><a href="filter.table.html?v=v1.0.0-rc1">Tables</a></li>
+                                    			<li><a href="filter.ui.html?v=v1.0.0-rc1">UI</a></li>
+                                    			<li><a href="filter.widget.html?v=v1.0.0-rc1">Widgets</a></li>
+                                    			<li><a href="filter.other.html?v=v1.0.0-rc1">Other</a></li>
+                        
+                        <li class="dropdown-header">Modules</li>
+
+            			                        <li><a href="filter.admin.html?v=v1.0.0-rc1">Admin</a></li>
+                        
+                        <!-- <li class="dropdown-header">Pages</li>
+                        <li><a href="">Demo pages</a></li> -->
+          			</ul>
+        		</li>
+      		</ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://www.mosaicpro.biz/blog/tutorials" target="_blank"><i class="fa fa-fw fa-file-text-o"></i> Online Guides</a></li>
+      		</ul>
+    	</div><!--/.nav-collapse -->
+  	</div>
+</div>
+
+<div class="innerLR">
+    <div class="row">
+
+        <div class="col-md-3" ng-app="App" ng-controller="ComponentsCtrl">
+            <input class="form-control" type="text" ng-model="search" placeholder="Search .." />
+            <tree collection="components" search="search" version="v1.0.0-rc1"></tree>
+        </div>
+
+        <div class="col-md-9">
+
+            
+                <div class="well well-lg">
+                    
+				<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">Courses List Page Components</h4>
+			</div>
+			<div class="panel-body">
+
+				<i class="fa fa-fw fa-3x pull-right fa-list"></i>
+				<p class="lead">Code for Courses List Page Components</p>
+
+						
+								
+		<hr><br><h4>3rd party assets:</h4><blockquote>
+					<i class="fa fa-fw fa-3x pull-left fa-windows"></i>
+			<p><strong>Name:</strong> PictoFoundry Elite Pro | <strong>File</strong>: ../assets/library/icons/pictoicons/css/picto.css</p>
+			<p><strong>Description:</strong> Premium icon fonts with 852 icons for developers, designers and creators of all things beautiful.</p>
+						
+		<p>				 | <strong>Official Website</strong>: <a href="http://pictofoundry.com/elite/" target="_blank">http://pictofoundry.com/elite/</a>		</p>
+		
+		
+		</blockquote><blockquote>
+					<i class="fa fa-fw fa-3x pull-left fa-code"></i>
+			<p><strong>Name:</strong> Holder | <strong>File</strong>: ../assets/plugins/media_holder/holder.js</p>
+			<p><strong>Description:</strong> Holder uses SVG and canvas to render image placeholders on the client side.</p>
+						
+		<p>		<strong>Version</strong>: 1.9		 | <strong>Official Website</strong>: <a href="https://github.com/imsky/holder" target="_blank">https://github.com/imsky/holder</a>		</p>
+		
+		
+		</blockquote>
+					</div>
+		</div>
+		
+		                </div>
+
+                
+                    
+                        <h4 class="separator bottom"><a href="#view-7f659a6f56da7128f349d5c641880037" data-toggle="collapse">courses_media_1</a></h4>
+                        <div class="collapse in" id="view-7f659a6f56da7128f349d5c641880037">
+
+                        <div class="widget widget-tabs">
+                            <div class="widget-head padding-none">
+
+                                <ul>
+                                    <li class="active"><a href="#preview-7f659a6f56da7128f349d5c641880037" data-toggle="tab">Preview</a></li>                                    <li><a href="#source-7f659a6f56da7128f349d5c641880037" data-toggle="tab">Source</a></li>                                    <li><a href="#styles-7f659a6f56da7128f349d5c641880037" data-toggle="tab">Styles</a></li>                                                                        <li><a href="#resources-7f659a6f56da7128f349d5c641880037" data-toggle="tab">Resources</a></li>                                </ul>
+
+                                                                <a href="../docs/examples/courses_media_1.html" target="_blank" class="pull-right btn btn-success">Live Example</a>
+                                
+                            </div>
+                            <div class="widget-body">
+                                <div class="tab-content">
+
+                                                                        <div class="tab-pane active" id="preview-7f659a6f56da7128f349d5c641880037">
+                                        <!-- WIDGET START -->
+<div class="widget media margin-none ">
+    <a class="pull-left bg-success innerAll text-center text-white" href="course.html"><i class="fa fa-fw icon-desktop-play fa-5x"></i></a>
+    <div class="media-body innerAll">
+        <h4 class="media-heading innerT"><a href="course.html" class="text-inverse">Computer 1 on 1</a> <small><i class="fa fa-fw fa-clock-o"></i> 5:15</small></h4>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    </div>
+</div>
+<!-- // END WIDGET -->
+
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="source-7f659a6f56da7128f349d5c641880037">
+                                        <pre class="prettyprint">&lt;!-- WIDGET START --&gt;
+&lt;div class=&quot;widget media margin-none &quot;&gt;
+    &lt;a class=&quot;pull-left bg-success innerAll text-center text-white&quot; href=&quot;course.html&quot;&gt;&lt;i class=&quot;fa fa-fw icon-desktop-play fa-5x&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class=&quot;media-body innerAll&quot;&gt;
+        &lt;h4 class=&quot;media-heading innerT&quot;&gt;&lt;a href=&quot;course.html&quot; class=&quot;text-inverse&quot;&gt;Computer 1 on 1&lt;/a&gt; &lt;small&gt;&lt;i class=&quot;fa fa-fw fa-clock-o&quot;&gt;&lt;/i&gt; 5:15&lt;/small&gt;&lt;/h4&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // END WIDGET --&gt;
+
+</pre>
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="styles-7f659a6f56da7128f349d5c641880037">
+
+                                        <p class="lead"><strong>Important note:</strong> By default, SMART is loading a complete stylesheet file that contains all the styles needed for the entire template. However, if you'd like to reduce bloat and load a minimal stylesheet with the required styles on each page of your application, follow along.</p>
+                                        <hr class="separator"/><br/>
+
+                                        <h4>Usage</h4>
+                                        <ol>
+                                            <li>Create a new LESS file <em>(e.g. styles.less)</em> and save it in the <code>assets/less</code> folder.</li>
+                                            <li>
+                                                <p>Copy &amp; paste the following imports in the LESS file you just created, in this order:</p>
+
+                                                                                                <div class="strong">CORE minimal styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/library/bootstrap/css/bootstrap.min.css&quot;;
+@import &quot;../assets/library/icons/fontawesome/assets/css/font-awesome.min.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_regular.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_social.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_filetypes.css&quot;;
+@import &quot;../assets/components/core/variables.less&quot;;
+@import &quot;../assets/components/core/mixins.less&quot;;
+@import &quot;../assets/components/core/scaffolding.less&quot;;
+@import &quot;../assets/components/core/helpers.less&quot;;</pre>
+                                                
+                                                <div class="strong">Component styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/components/core/widgets.less&quot;;
+@import &quot;../assets/library/icons/pictoicons/css/picto.css&quot;;</pre>
+                                            </li>
+                                            <li>Place the file in your project's document root.</li>
+                                            <li>
+                                                Load the LESS file into the <code>&lt;head&gt;</code> section of your HTML document, before any JavaScript files: <p><pre class="prettyprint">&lt;link rel=&quot;stylesheet/less&quot; href=&quot;styles.less&quot; /&gt;</pre>
+</p>
+                                                <p><span class="label label-danger">NOTE</span>&nbsp; To include the LESS file directly, make sure the LESS.js library is also loaded in the <code>head</code> section of the template, otherwise compile the LESS file into CSS and include that file.</p>
+                                            </li>
+                                            <li>If you'd like to include other components on the same page, don't create multiple LESS files, but add all the imports in one file. You can create a LESS file for each page with just the resources used for that specific page, or you could create and use a single LESS file for the entire project.</li>
+                                            <li>In production, compile the LESS file and use the resulting minified CSS file in the HTML document.</li>
+                                        </ol>
+
+                                                                                <h4>Example</h4>
+                                        <p>See the <a href="../docs/examples/courses_media_1.html" target="_blank">Live Example</a> page and it's source for a minimal implementation of this component.</p>
+                                        
+                                    </div>
+                                    
+                                    
+                                                                        <div class="tab-pane" id="resources-7f659a6f56da7128f349d5c641880037">
+
+                                        <div class="panel panel-default"><div class="panel-body"><blockquote class="margin-none">
+					<i class="fa fa-fw fa-3x pull-left fa-windows"></i>
+			<p><strong>Name:</strong> PictoFoundry Elite Pro | <strong>File</strong>: ../assets/library/icons/pictoicons/css/picto.css</p>
+			<p><strong>Description:</strong> Premium icon fonts with 852 icons for developers, designers and creators of all things beautiful.</p>
+						
+		<p>				 | <strong>Official Website</strong>: <a href="http://pictofoundry.com/elite/" target="_blank">http://pictofoundry.com/elite/</a>		</p>
+		
+		
+		</blockquote></div></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                    </div>
+                                        
+                    
+                        <h4 class="separator bottom"><a href="#view-acecba0533b441bc7703d573b3858dc2" data-toggle="collapse">courses_media_2</a></h4>
+                        <div class="collapse in" id="view-acecba0533b441bc7703d573b3858dc2">
+
+                        <div class="widget widget-tabs">
+                            <div class="widget-head padding-none">
+
+                                <ul>
+                                    <li class="active"><a href="#preview-acecba0533b441bc7703d573b3858dc2" data-toggle="tab">Preview</a></li>                                    <li><a href="#source-acecba0533b441bc7703d573b3858dc2" data-toggle="tab">Source</a></li>                                    <li><a href="#styles-acecba0533b441bc7703d573b3858dc2" data-toggle="tab">Styles</a></li>                                                                        <li><a href="#resources-acecba0533b441bc7703d573b3858dc2" data-toggle="tab">Resources</a></li>                                </ul>
+
+                                                                <a href="../docs/examples/courses_media_2.html" target="_blank" class="pull-right btn btn-success">Live Example</a>
+                                
+                            </div>
+                            <div class="widget-body">
+                                <div class="tab-content">
+
+                                                                        <div class="tab-pane active" id="preview-acecba0533b441bc7703d573b3858dc2">
+                                        <!-- WIDGET START -->
+<div class="widget media margin-none">
+    <a class="pull-left bg-primary innerAll text-center text-white" href="course.html"><i class="icon-scale-2 fa-5x fa fa-fw"></i></a>
+    <div class="media-body innerAll">
+        <h4 class="media-heading innerT"><a href="course.html" class="text-inverse">Computer 1 on 1</a> <small><i class="fa fa-fw fa-clock-o"></i> 5:15</small></h4>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    </div>
+</div>
+<!-- // END WIDGET -->
+
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="source-acecba0533b441bc7703d573b3858dc2">
+                                        <pre class="prettyprint">&lt;!-- WIDGET START --&gt;
+&lt;div class=&quot;widget media margin-none&quot;&gt;
+    &lt;a class=&quot;pull-left bg-primary innerAll text-center text-white&quot; href=&quot;course.html&quot;&gt;&lt;i class=&quot;icon-scale-2 fa-5x fa fa-fw&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class=&quot;media-body innerAll&quot;&gt;
+        &lt;h4 class=&quot;media-heading innerT&quot;&gt;&lt;a href=&quot;course.html&quot; class=&quot;text-inverse&quot;&gt;Computer 1 on 1&lt;/a&gt; &lt;small&gt;&lt;i class=&quot;fa fa-fw fa-clock-o&quot;&gt;&lt;/i&gt; 5:15&lt;/small&gt;&lt;/h4&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // END WIDGET --&gt;
+
+</pre>
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="styles-acecba0533b441bc7703d573b3858dc2">
+
+                                        <p class="lead"><strong>Important note:</strong> By default, SMART is loading a complete stylesheet file that contains all the styles needed for the entire template. However, if you'd like to reduce bloat and load a minimal stylesheet with the required styles on each page of your application, follow along.</p>
+                                        <hr class="separator"/><br/>
+
+                                        <h4>Usage</h4>
+                                        <ol>
+                                            <li>Create a new LESS file <em>(e.g. styles.less)</em> and save it in the <code>assets/less</code> folder.</li>
+                                            <li>
+                                                <p>Copy &amp; paste the following imports in the LESS file you just created, in this order:</p>
+
+                                                                                                <div class="strong">CORE minimal styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/library/bootstrap/css/bootstrap.min.css&quot;;
+@import &quot;../assets/library/icons/fontawesome/assets/css/font-awesome.min.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_regular.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_social.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_filetypes.css&quot;;
+@import &quot;../assets/components/core/variables.less&quot;;
+@import &quot;../assets/components/core/mixins.less&quot;;
+@import &quot;../assets/components/core/scaffolding.less&quot;;
+@import &quot;../assets/components/core/helpers.less&quot;;</pre>
+                                                
+                                                <div class="strong">Component styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/components/core/widgets.less&quot;;
+@import &quot;../assets/library/icons/pictoicons/css/picto.css&quot;;</pre>
+                                            </li>
+                                            <li>Place the file in your project's document root.</li>
+                                            <li>
+                                                Load the LESS file into the <code>&lt;head&gt;</code> section of your HTML document, before any JavaScript files: <p><pre class="prettyprint">&lt;link rel=&quot;stylesheet/less&quot; href=&quot;styles.less&quot; /&gt;</pre>
+</p>
+                                                <p><span class="label label-danger">NOTE</span>&nbsp; To include the LESS file directly, make sure the LESS.js library is also loaded in the <code>head</code> section of the template, otherwise compile the LESS file into CSS and include that file.</p>
+                                            </li>
+                                            <li>If you'd like to include other components on the same page, don't create multiple LESS files, but add all the imports in one file. You can create a LESS file for each page with just the resources used for that specific page, or you could create and use a single LESS file for the entire project.</li>
+                                            <li>In production, compile the LESS file and use the resulting minified CSS file in the HTML document.</li>
+                                        </ol>
+
+                                                                                <h4>Example</h4>
+                                        <p>See the <a href="../docs/examples/courses_media_2.html" target="_blank">Live Example</a> page and it's source for a minimal implementation of this component.</p>
+                                        
+                                    </div>
+                                    
+                                    
+                                                                        <div class="tab-pane" id="resources-acecba0533b441bc7703d573b3858dc2">
+
+                                        <div class="panel panel-default"><div class="panel-body"><blockquote class="margin-none">
+					<i class="fa fa-fw fa-3x pull-left fa-windows"></i>
+			<p><strong>Name:</strong> PictoFoundry Elite Pro | <strong>File</strong>: ../assets/library/icons/pictoicons/css/picto.css</p>
+			<p><strong>Description:</strong> Premium icon fonts with 852 icons for developers, designers and creators of all things beautiful.</p>
+						
+		<p>				 | <strong>Official Website</strong>: <a href="http://pictofoundry.com/elite/" target="_blank">http://pictofoundry.com/elite/</a>		</p>
+		
+		
+		</blockquote></div></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                    </div>
+                                        
+                    
+                        <h4 class="separator bottom"><a href="#view-9e7c82dfa09475ec902dbf552e785294" data-toggle="collapse">courses_media_3</a></h4>
+                        <div class="collapse in" id="view-9e7c82dfa09475ec902dbf552e785294">
+
+                        <div class="widget widget-tabs">
+                            <div class="widget-head padding-none">
+
+                                <ul>
+                                    <li class="active"><a href="#preview-9e7c82dfa09475ec902dbf552e785294" data-toggle="tab">Preview</a></li>                                    <li><a href="#source-9e7c82dfa09475ec902dbf552e785294" data-toggle="tab">Source</a></li>                                    <li><a href="#styles-9e7c82dfa09475ec902dbf552e785294" data-toggle="tab">Styles</a></li>                                                                        <li><a href="#resources-9e7c82dfa09475ec902dbf552e785294" data-toggle="tab">Resources</a></li>                                </ul>
+
+                                                                <a href="../docs/examples/courses_media_3.html" target="_blank" class="pull-right btn btn-success">Live Example</a>
+                                
+                            </div>
+                            <div class="widget-body">
+                                <div class="tab-content">
+
+                                                                        <div class="tab-pane active" id="preview-9e7c82dfa09475ec902dbf552e785294">
+                                        <!-- WIDGET START -->
+<div class="widget media margin-none">
+    <a class="pull-left bg-purple innerAll text-center text-white" href="course.html"><i class="icon-race-flag-fill fa-5x fa fa-fw"></i></a>
+    <div class="media-body innerAll">
+        <h4 class="media-heading innerT "><a href="course.html" class="text-inverse">Computer 1 on 1</a> <small><i class="fa fa-fw fa-clock-o"></i> 5:15</small></h4>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    </div>
+</div>
+<!-- // END WIDGET -->
+
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="source-9e7c82dfa09475ec902dbf552e785294">
+                                        <pre class="prettyprint">&lt;!-- WIDGET START --&gt;
+&lt;div class=&quot;widget media margin-none&quot;&gt;
+    &lt;a class=&quot;pull-left bg-purple innerAll text-center text-white&quot; href=&quot;course.html&quot;&gt;&lt;i class=&quot;icon-race-flag-fill fa-5x fa fa-fw&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class=&quot;media-body innerAll&quot;&gt;
+        &lt;h4 class=&quot;media-heading innerT &quot;&gt;&lt;a href=&quot;course.html&quot; class=&quot;text-inverse&quot;&gt;Computer 1 on 1&lt;/a&gt; &lt;small&gt;&lt;i class=&quot;fa fa-fw fa-clock-o&quot;&gt;&lt;/i&gt; 5:15&lt;/small&gt;&lt;/h4&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // END WIDGET --&gt;
+
+</pre>
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="styles-9e7c82dfa09475ec902dbf552e785294">
+
+                                        <p class="lead"><strong>Important note:</strong> By default, SMART is loading a complete stylesheet file that contains all the styles needed for the entire template. However, if you'd like to reduce bloat and load a minimal stylesheet with the required styles on each page of your application, follow along.</p>
+                                        <hr class="separator"/><br/>
+
+                                        <h4>Usage</h4>
+                                        <ol>
+                                            <li>Create a new LESS file <em>(e.g. styles.less)</em> and save it in the <code>assets/less</code> folder.</li>
+                                            <li>
+                                                <p>Copy &amp; paste the following imports in the LESS file you just created, in this order:</p>
+
+                                                                                                <div class="strong">CORE minimal styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/library/bootstrap/css/bootstrap.min.css&quot;;
+@import &quot;../assets/library/icons/fontawesome/assets/css/font-awesome.min.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_regular.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_social.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_filetypes.css&quot;;
+@import &quot;../assets/components/core/variables.less&quot;;
+@import &quot;../assets/components/core/mixins.less&quot;;
+@import &quot;../assets/components/core/scaffolding.less&quot;;
+@import &quot;../assets/components/core/helpers.less&quot;;</pre>
+                                                
+                                                <div class="strong">Component styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/components/core/widgets.less&quot;;
+@import &quot;../assets/library/icons/pictoicons/css/picto.css&quot;;</pre>
+                                            </li>
+                                            <li>Place the file in your project's document root.</li>
+                                            <li>
+                                                Load the LESS file into the <code>&lt;head&gt;</code> section of your HTML document, before any JavaScript files: <p><pre class="prettyprint">&lt;link rel=&quot;stylesheet/less&quot; href=&quot;styles.less&quot; /&gt;</pre>
+</p>
+                                                <p><span class="label label-danger">NOTE</span>&nbsp; To include the LESS file directly, make sure the LESS.js library is also loaded in the <code>head</code> section of the template, otherwise compile the LESS file into CSS and include that file.</p>
+                                            </li>
+                                            <li>If you'd like to include other components on the same page, don't create multiple LESS files, but add all the imports in one file. You can create a LESS file for each page with just the resources used for that specific page, or you could create and use a single LESS file for the entire project.</li>
+                                            <li>In production, compile the LESS file and use the resulting minified CSS file in the HTML document.</li>
+                                        </ol>
+
+                                                                                <h4>Example</h4>
+                                        <p>See the <a href="../docs/examples/courses_media_3.html" target="_blank">Live Example</a> page and it's source for a minimal implementation of this component.</p>
+                                        
+                                    </div>
+                                    
+                                    
+                                                                        <div class="tab-pane" id="resources-9e7c82dfa09475ec902dbf552e785294">
+
+                                        <div class="panel panel-default"><div class="panel-body"><blockquote class="margin-none">
+					<i class="fa fa-fw fa-3x pull-left fa-windows"></i>
+			<p><strong>Name:</strong> PictoFoundry Elite Pro | <strong>File</strong>: ../assets/library/icons/pictoicons/css/picto.css</p>
+			<p><strong>Description:</strong> Premium icon fonts with 852 icons for developers, designers and creators of all things beautiful.</p>
+						
+		<p>				 | <strong>Official Website</strong>: <a href="http://pictofoundry.com/elite/" target="_blank">http://pictofoundry.com/elite/</a>		</p>
+		
+		
+		</blockquote></div></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                    </div>
+                                        
+                    
+                        <h4 class="separator bottom"><a href="#view-79c9d8ee58db8703de50532a14c0ac62" data-toggle="collapse">courses_media_4</a></h4>
+                        <div class="collapse in" id="view-79c9d8ee58db8703de50532a14c0ac62">
+
+                        <div class="widget widget-tabs">
+                            <div class="widget-head padding-none">
+
+                                <ul>
+                                    <li class="active"><a href="#preview-79c9d8ee58db8703de50532a14c0ac62" data-toggle="tab">Preview</a></li>                                    <li><a href="#source-79c9d8ee58db8703de50532a14c0ac62" data-toggle="tab">Source</a></li>                                    <li><a href="#styles-79c9d8ee58db8703de50532a14c0ac62" data-toggle="tab">Styles</a></li>                                                                        <li><a href="#resources-79c9d8ee58db8703de50532a14c0ac62" data-toggle="tab">Resources</a></li>                                </ul>
+
+                                                                <a href="../docs/examples/courses_media_4.html" target="_blank" class="pull-right btn btn-success">Live Example</a>
+                                
+                            </div>
+                            <div class="widget-body">
+                                <div class="tab-content">
+
+                                                                        <div class="tab-pane active" id="preview-79c9d8ee58db8703de50532a14c0ac62">
+                                        <!-- WIDGET START -->
+<div class="widget media margin-none">
+    <a class="pull-left bg-info innerAll text-center text-white" href="course.html"><i class="icon-store-front fa-5x fa fa-fw"></i></a>
+    <div class="media-body innerAll">
+        <h4 class="media-heading innerT"><a href="course.html" class="text-inverse">Computer 1 on 1</a> <small><i class="fa fa-fw fa-clock-o"></i> 5:15</small></h4>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    </div>
+</div>
+<!-- // END WIDGET -->
+
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="source-79c9d8ee58db8703de50532a14c0ac62">
+                                        <pre class="prettyprint">&lt;!-- WIDGET START --&gt;
+&lt;div class=&quot;widget media margin-none&quot;&gt;
+    &lt;a class=&quot;pull-left bg-info innerAll text-center text-white&quot; href=&quot;course.html&quot;&gt;&lt;i class=&quot;icon-store-front fa-5x fa fa-fw&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class=&quot;media-body innerAll&quot;&gt;
+        &lt;h4 class=&quot;media-heading innerT&quot;&gt;&lt;a href=&quot;course.html&quot; class=&quot;text-inverse&quot;&gt;Computer 1 on 1&lt;/a&gt; &lt;small&gt;&lt;i class=&quot;fa fa-fw fa-clock-o&quot;&gt;&lt;/i&gt; 5:15&lt;/small&gt;&lt;/h4&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // END WIDGET --&gt;
+
+</pre>
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="styles-79c9d8ee58db8703de50532a14c0ac62">
+
+                                        <p class="lead"><strong>Important note:</strong> By default, SMART is loading a complete stylesheet file that contains all the styles needed for the entire template. However, if you'd like to reduce bloat and load a minimal stylesheet with the required styles on each page of your application, follow along.</p>
+                                        <hr class="separator"/><br/>
+
+                                        <h4>Usage</h4>
+                                        <ol>
+                                            <li>Create a new LESS file <em>(e.g. styles.less)</em> and save it in the <code>assets/less</code> folder.</li>
+                                            <li>
+                                                <p>Copy &amp; paste the following imports in the LESS file you just created, in this order:</p>
+
+                                                                                                <div class="strong">CORE minimal styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/library/bootstrap/css/bootstrap.min.css&quot;;
+@import &quot;../assets/library/icons/fontawesome/assets/css/font-awesome.min.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_regular.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_social.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_filetypes.css&quot;;
+@import &quot;../assets/components/core/variables.less&quot;;
+@import &quot;../assets/components/core/mixins.less&quot;;
+@import &quot;../assets/components/core/scaffolding.less&quot;;
+@import &quot;../assets/components/core/helpers.less&quot;;</pre>
+                                                
+                                                <div class="strong">Component styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/components/core/widgets.less&quot;;
+@import &quot;../assets/library/icons/pictoicons/css/picto.css&quot;;</pre>
+                                            </li>
+                                            <li>Place the file in your project's document root.</li>
+                                            <li>
+                                                Load the LESS file into the <code>&lt;head&gt;</code> section of your HTML document, before any JavaScript files: <p><pre class="prettyprint">&lt;link rel=&quot;stylesheet/less&quot; href=&quot;styles.less&quot; /&gt;</pre>
+</p>
+                                                <p><span class="label label-danger">NOTE</span>&nbsp; To include the LESS file directly, make sure the LESS.js library is also loaded in the <code>head</code> section of the template, otherwise compile the LESS file into CSS and include that file.</p>
+                                            </li>
+                                            <li>If you'd like to include other components on the same page, don't create multiple LESS files, but add all the imports in one file. You can create a LESS file for each page with just the resources used for that specific page, or you could create and use a single LESS file for the entire project.</li>
+                                            <li>In production, compile the LESS file and use the resulting minified CSS file in the HTML document.</li>
+                                        </ol>
+
+                                                                                <h4>Example</h4>
+                                        <p>See the <a href="../docs/examples/courses_media_4.html" target="_blank">Live Example</a> page and it's source for a minimal implementation of this component.</p>
+                                        
+                                    </div>
+                                    
+                                    
+                                                                        <div class="tab-pane" id="resources-79c9d8ee58db8703de50532a14c0ac62">
+
+                                        <div class="panel panel-default"><div class="panel-body"><blockquote class="margin-none">
+					<i class="fa fa-fw fa-3x pull-left fa-windows"></i>
+			<p><strong>Name:</strong> PictoFoundry Elite Pro | <strong>File</strong>: ../assets/library/icons/pictoicons/css/picto.css</p>
+			<p><strong>Description:</strong> Premium icon fonts with 852 icons for developers, designers and creators of all things beautiful.</p>
+						
+		<p>				 | <strong>Official Website</strong>: <a href="http://pictofoundry.com/elite/" target="_blank">http://pictofoundry.com/elite/</a>		</p>
+		
+		
+		</blockquote></div></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                    </div>
+                                        
+                    
+                        <h4 class="separator bottom"><a href="#view-59cd16c8dd499e695b63480d52da5d70" data-toggle="collapse">courses_media_5</a></h4>
+                        <div class="collapse in" id="view-59cd16c8dd499e695b63480d52da5d70">
+
+                        <div class="widget widget-tabs">
+                            <div class="widget-head padding-none">
+
+                                <ul>
+                                    <li class="active"><a href="#preview-59cd16c8dd499e695b63480d52da5d70" data-toggle="tab">Preview</a></li>                                    <li><a href="#source-59cd16c8dd499e695b63480d52da5d70" data-toggle="tab">Source</a></li>                                    <li><a href="#styles-59cd16c8dd499e695b63480d52da5d70" data-toggle="tab">Styles</a></li>                                                                        <li><a href="#resources-59cd16c8dd499e695b63480d52da5d70" data-toggle="tab">Resources</a></li>                                </ul>
+
+                                                                <a href="../docs/examples/courses_media_5.html" target="_blank" class="pull-right btn btn-success">Live Example</a>
+                                
+                            </div>
+                            <div class="widget-body">
+                                <div class="tab-content">
+
+                                                                        <div class="tab-pane active" id="preview-59cd16c8dd499e695b63480d52da5d70">
+                                        <!-- WIDGET START -->
+<div class="widget media margin-none">
+    <a class="pull-left bg-inverse innerAll text-center text-white" href="course.html"><i class="icon-desktop-play fa-5x fa fa-fw"></i></a>
+    <div class="media-body innerAll">
+        <h4 class="media-heading innerT"><a href="course.html" class="text-inverse">Computer 1 on 1</a> <small><i class="fa fa-fw fa-clock-o"></i> 5:15</small></h4>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    </div>
+</div>
+<!-- // END WIDGET -->
+
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="source-59cd16c8dd499e695b63480d52da5d70">
+                                        <pre class="prettyprint">&lt;!-- WIDGET START --&gt;
+&lt;div class=&quot;widget media margin-none&quot;&gt;
+    &lt;a class=&quot;pull-left bg-inverse innerAll text-center text-white&quot; href=&quot;course.html&quot;&gt;&lt;i class=&quot;icon-desktop-play fa-5x fa fa-fw&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class=&quot;media-body innerAll&quot;&gt;
+        &lt;h4 class=&quot;media-heading innerT&quot;&gt;&lt;a href=&quot;course.html&quot; class=&quot;text-inverse&quot;&gt;Computer 1 on 1&lt;/a&gt; &lt;small&gt;&lt;i class=&quot;fa fa-fw fa-clock-o&quot;&gt;&lt;/i&gt; 5:15&lt;/small&gt;&lt;/h4&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // END WIDGET --&gt;
+
+</pre>
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="styles-59cd16c8dd499e695b63480d52da5d70">
+
+                                        <p class="lead"><strong>Important note:</strong> By default, SMART is loading a complete stylesheet file that contains all the styles needed for the entire template. However, if you'd like to reduce bloat and load a minimal stylesheet with the required styles on each page of your application, follow along.</p>
+                                        <hr class="separator"/><br/>
+
+                                        <h4>Usage</h4>
+                                        <ol>
+                                            <li>Create a new LESS file <em>(e.g. styles.less)</em> and save it in the <code>assets/less</code> folder.</li>
+                                            <li>
+                                                <p>Copy &amp; paste the following imports in the LESS file you just created, in this order:</p>
+
+                                                                                                <div class="strong">CORE minimal styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/library/bootstrap/css/bootstrap.min.css&quot;;
+@import &quot;../assets/library/icons/fontawesome/assets/css/font-awesome.min.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_regular.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_social.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_filetypes.css&quot;;
+@import &quot;../assets/components/core/variables.less&quot;;
+@import &quot;../assets/components/core/mixins.less&quot;;
+@import &quot;../assets/components/core/scaffolding.less&quot;;
+@import &quot;../assets/components/core/helpers.less&quot;;</pre>
+                                                
+                                                <div class="strong">Component styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/components/core/widgets.less&quot;;
+@import &quot;../assets/library/icons/pictoicons/css/picto.css&quot;;</pre>
+                                            </li>
+                                            <li>Place the file in your project's document root.</li>
+                                            <li>
+                                                Load the LESS file into the <code>&lt;head&gt;</code> section of your HTML document, before any JavaScript files: <p><pre class="prettyprint">&lt;link rel=&quot;stylesheet/less&quot; href=&quot;styles.less&quot; /&gt;</pre>
+</p>
+                                                <p><span class="label label-danger">NOTE</span>&nbsp; To include the LESS file directly, make sure the LESS.js library is also loaded in the <code>head</code> section of the template, otherwise compile the LESS file into CSS and include that file.</p>
+                                            </li>
+                                            <li>If you'd like to include other components on the same page, don't create multiple LESS files, but add all the imports in one file. You can create a LESS file for each page with just the resources used for that specific page, or you could create and use a single LESS file for the entire project.</li>
+                                            <li>In production, compile the LESS file and use the resulting minified CSS file in the HTML document.</li>
+                                        </ol>
+
+                                                                                <h4>Example</h4>
+                                        <p>See the <a href="../docs/examples/courses_media_5.html" target="_blank">Live Example</a> page and it's source for a minimal implementation of this component.</p>
+                                        
+                                    </div>
+                                    
+                                    
+                                                                        <div class="tab-pane" id="resources-59cd16c8dd499e695b63480d52da5d70">
+
+                                        <div class="panel panel-default"><div class="panel-body"><blockquote class="margin-none">
+					<i class="fa fa-fw fa-3x pull-left fa-windows"></i>
+			<p><strong>Name:</strong> PictoFoundry Elite Pro | <strong>File</strong>: ../assets/library/icons/pictoicons/css/picto.css</p>
+			<p><strong>Description:</strong> Premium icon fonts with 852 icons for developers, designers and creators of all things beautiful.</p>
+						
+		<p>				 | <strong>Official Website</strong>: <a href="http://pictofoundry.com/elite/" target="_blank">http://pictofoundry.com/elite/</a>		</p>
+		
+		
+		</blockquote></div></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                    </div>
+                                        
+                    
+                        <h4 class="separator bottom"><a href="#view-9c863d5f52f225d4a15ed8620535211a" data-toggle="collapse">courses_media_6</a></h4>
+                        <div class="collapse in" id="view-9c863d5f52f225d4a15ed8620535211a">
+
+                        <div class="widget widget-tabs">
+                            <div class="widget-head padding-none">
+
+                                <ul>
+                                    <li class="active"><a href="#preview-9c863d5f52f225d4a15ed8620535211a" data-toggle="tab">Preview</a></li>                                    <li><a href="#source-9c863d5f52f225d4a15ed8620535211a" data-toggle="tab">Source</a></li>                                    <li><a href="#styles-9c863d5f52f225d4a15ed8620535211a" data-toggle="tab">Styles</a></li>                                                                        <li><a href="#resources-9c863d5f52f225d4a15ed8620535211a" data-toggle="tab">Resources</a></li>                                </ul>
+
+                                                                <a href="../docs/examples/courses_media_6.html" target="_blank" class="pull-right btn btn-success">Live Example</a>
+                                
+                            </div>
+                            <div class="widget-body">
+                                <div class="tab-content">
+
+                                                                        <div class="tab-pane active" id="preview-9c863d5f52f225d4a15ed8620535211a">
+                                        <!-- WIDGET START -->
+<div class="widget media margin-none">
+    <a class="pull-left bg-mustard innerAll text-center text-white" href="course.html"><i class="icon-ambulance fa-5x fa fa-fw"></i></a>
+    <div class="media-body innerAll">
+        <h4 class="media-heading innerT"><a href="course.html" class="text-inverse">Computer 1 on 1</a> <small><i class="fa fa-fw fa-clock-o"></i> 5:15</small></h4>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    </div>
+</div>
+<!-- // END WIDGET -->
+
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="source-9c863d5f52f225d4a15ed8620535211a">
+                                        <pre class="prettyprint">&lt;!-- WIDGET START --&gt;
+&lt;div class=&quot;widget media margin-none&quot;&gt;
+    &lt;a class=&quot;pull-left bg-mustard innerAll text-center text-white&quot; href=&quot;course.html&quot;&gt;&lt;i class=&quot;icon-ambulance fa-5x fa fa-fw&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class=&quot;media-body innerAll&quot;&gt;
+        &lt;h4 class=&quot;media-heading innerT&quot;&gt;&lt;a href=&quot;course.html&quot; class=&quot;text-inverse&quot;&gt;Computer 1 on 1&lt;/a&gt; &lt;small&gt;&lt;i class=&quot;fa fa-fw fa-clock-o&quot;&gt;&lt;/i&gt; 5:15&lt;/small&gt;&lt;/h4&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed.
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // END WIDGET --&gt;
+
+</pre>
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="styles-9c863d5f52f225d4a15ed8620535211a">
+
+                                        <p class="lead"><strong>Important note:</strong> By default, SMART is loading a complete stylesheet file that contains all the styles needed for the entire template. However, if you'd like to reduce bloat and load a minimal stylesheet with the required styles on each page of your application, follow along.</p>
+                                        <hr class="separator"/><br/>
+
+                                        <h4>Usage</h4>
+                                        <ol>
+                                            <li>Create a new LESS file <em>(e.g. styles.less)</em> and save it in the <code>assets/less</code> folder.</li>
+                                            <li>
+                                                <p>Copy &amp; paste the following imports in the LESS file you just created, in this order:</p>
+
+                                                                                                <div class="strong">CORE minimal styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/library/bootstrap/css/bootstrap.min.css&quot;;
+@import &quot;../assets/library/icons/fontawesome/assets/css/font-awesome.min.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_regular.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_social.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_filetypes.css&quot;;
+@import &quot;../assets/components/core/variables.less&quot;;
+@import &quot;../assets/components/core/mixins.less&quot;;
+@import &quot;../assets/components/core/scaffolding.less&quot;;
+@import &quot;../assets/components/core/helpers.less&quot;;</pre>
+                                                
+                                                <div class="strong">Component styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/components/core/widgets.less&quot;;
+@import &quot;../assets/library/icons/pictoicons/css/picto.css&quot;;</pre>
+                                            </li>
+                                            <li>Place the file in your project's document root.</li>
+                                            <li>
+                                                Load the LESS file into the <code>&lt;head&gt;</code> section of your HTML document, before any JavaScript files: <p><pre class="prettyprint">&lt;link rel=&quot;stylesheet/less&quot; href=&quot;styles.less&quot; /&gt;</pre>
+</p>
+                                                <p><span class="label label-danger">NOTE</span>&nbsp; To include the LESS file directly, make sure the LESS.js library is also loaded in the <code>head</code> section of the template, otherwise compile the LESS file into CSS and include that file.</p>
+                                            </li>
+                                            <li>If you'd like to include other components on the same page, don't create multiple LESS files, but add all the imports in one file. You can create a LESS file for each page with just the resources used for that specific page, or you could create and use a single LESS file for the entire project.</li>
+                                            <li>In production, compile the LESS file and use the resulting minified CSS file in the HTML document.</li>
+                                        </ol>
+
+                                                                                <h4>Example</h4>
+                                        <p>See the <a href="../docs/examples/courses_media_6.html" target="_blank">Live Example</a> page and it's source for a minimal implementation of this component.</p>
+                                        
+                                    </div>
+                                    
+                                    
+                                                                        <div class="tab-pane" id="resources-9c863d5f52f225d4a15ed8620535211a">
+
+                                        <div class="panel panel-default"><div class="panel-body"><blockquote class="margin-none">
+					<i class="fa fa-fw fa-3x pull-left fa-windows"></i>
+			<p><strong>Name:</strong> PictoFoundry Elite Pro | <strong>File</strong>: ../assets/library/icons/pictoicons/css/picto.css</p>
+			<p><strong>Description:</strong> Premium icon fonts with 852 icons for developers, designers and creators of all things beautiful.</p>
+						
+		<p>				 | <strong>Official Website</strong>: <a href="http://pictofoundry.com/elite/" target="_blank">http://pictofoundry.com/elite/</a>		</p>
+		
+		
+		</blockquote></div></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                    </div>
+                                        
+                    
+                        <h4 class="separator bottom"><a href="#view-b9b1b4579634e670d6c46e58790d51cf" data-toggle="collapse">courses_widget_videos</a></h4>
+                        <div class="collapse in" id="view-b9b1b4579634e670d6c46e58790d51cf">
+
+                        <div class="widget widget-tabs">
+                            <div class="widget-head padding-none">
+
+                                <ul>
+                                    <li class="active"><a href="#preview-b9b1b4579634e670d6c46e58790d51cf" data-toggle="tab">Preview</a></li>                                    <li><a href="#source-b9b1b4579634e670d6c46e58790d51cf" data-toggle="tab">Source</a></li>                                    <li><a href="#styles-b9b1b4579634e670d6c46e58790d51cf" data-toggle="tab">Styles</a></li>                                    <li><a href="#scripts-b9b1b4579634e670d6c46e58790d51cf" data-toggle="tab">Scripts</a></li>                                    <li><a href="#resources-b9b1b4579634e670d6c46e58790d51cf" data-toggle="tab">Resources</a></li>                                </ul>
+
+                                                                <a href="../docs/examples/courses_widget_videos.html" target="_blank" class="pull-right btn btn-success">Live Example</a>
+                                
+                            </div>
+                            <div class="widget-body">
+                                <div class="tab-content">
+
+                                                                        <div class="tab-pane active" id="preview-b9b1b4579634e670d6c46e58790d51cf">
+                                        <!-- VIDEOS START -->
+<div class="widget">
+    <h5 class="innerAll margin-none border-bottom bg-white">Popular Videos</h5>
+            <a href="#" class="display-block media margin-none bg-white innerAll border-bottom">
+            <img class="pull-left" data-src="holder.js/50x50" alt="..."/>
+            <span class="display-block media-body ">
+                <h5 class="innerT half">Video Tutorial</h5>
+                <div class="clearfix"></div>
+                <small class="text-center text-inverse muted"><i class="fa fa-fw fa-clock-o"></i> 5:15</small>
+            </span>
+        </a>
+            <a href="#" class="display-block media margin-none bg-white innerAll border-bottom">
+            <img class="pull-left" data-src="holder.js/50x50" alt="..."/>
+            <span class="display-block media-body ">
+                <h5 class="innerT half">Video Tutorial</h5>
+                <div class="clearfix"></div>
+                <small class="text-center text-inverse muted"><i class="fa fa-fw fa-clock-o"></i> 5:15</small>
+            </span>
+        </a>
+            <a href="#" class="display-block media margin-none bg-white innerAll border-bottom">
+            <img class="pull-left" data-src="holder.js/50x50" alt="..."/>
+            <span class="display-block media-body ">
+                <h5 class="innerT half">Video Tutorial</h5>
+                <div class="clearfix"></div>
+                <small class="text-center text-inverse muted"><i class="fa fa-fw fa-clock-o"></i> 5:15</small>
+            </span>
+        </a>
+            <a href="#" class="display-block media margin-none bg-white innerAll border-bottom">
+            <img class="pull-left" data-src="holder.js/50x50" alt="..."/>
+            <span class="display-block media-body ">
+                <h5 class="innerT half">Video Tutorial</h5>
+                <div class="clearfix"></div>
+                <small class="text-center text-inverse muted"><i class="fa fa-fw fa-clock-o"></i> 5:15</small>
+            </span>
+        </a>
+    </div>
+<!-- // END VIDEOS -->
+
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="source-b9b1b4579634e670d6c46e58790d51cf">
+                                        <pre class="prettyprint">&lt;!-- VIDEOS START --&gt;
+&lt;div class=&quot;widget&quot;&gt;
+    &lt;h5 class=&quot;innerAll margin-none border-bottom bg-white&quot;&gt;Popular Videos&lt;/h5&gt;
+            &lt;a href=&quot;#&quot; class=&quot;display-block media margin-none bg-white innerAll border-bottom&quot;&gt;
+            &lt;img class=&quot;pull-left&quot; data-src=&quot;holder.js/50x50&quot; alt=&quot;...&quot;/&gt;
+            &lt;span class=&quot;display-block media-body &quot;&gt;
+                &lt;h5 class=&quot;innerT half&quot;&gt;Video Tutorial&lt;/h5&gt;
+                &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+                &lt;small class=&quot;text-center text-inverse muted&quot;&gt;&lt;i class=&quot;fa fa-fw fa-clock-o&quot;&gt;&lt;/i&gt; 5:15&lt;/small&gt;
+            &lt;/span&gt;
+        &lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;display-block media margin-none bg-white innerAll border-bottom&quot;&gt;
+            &lt;img class=&quot;pull-left&quot; data-src=&quot;holder.js/50x50&quot; alt=&quot;...&quot;/&gt;
+            &lt;span class=&quot;display-block media-body &quot;&gt;
+                &lt;h5 class=&quot;innerT half&quot;&gt;Video Tutorial&lt;/h5&gt;
+                &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+                &lt;small class=&quot;text-center text-inverse muted&quot;&gt;&lt;i class=&quot;fa fa-fw fa-clock-o&quot;&gt;&lt;/i&gt; 5:15&lt;/small&gt;
+            &lt;/span&gt;
+        &lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;display-block media margin-none bg-white innerAll border-bottom&quot;&gt;
+            &lt;img class=&quot;pull-left&quot; data-src=&quot;holder.js/50x50&quot; alt=&quot;...&quot;/&gt;
+            &lt;span class=&quot;display-block media-body &quot;&gt;
+                &lt;h5 class=&quot;innerT half&quot;&gt;Video Tutorial&lt;/h5&gt;
+                &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+                &lt;small class=&quot;text-center text-inverse muted&quot;&gt;&lt;i class=&quot;fa fa-fw fa-clock-o&quot;&gt;&lt;/i&gt; 5:15&lt;/small&gt;
+            &lt;/span&gt;
+        &lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;display-block media margin-none bg-white innerAll border-bottom&quot;&gt;
+            &lt;img class=&quot;pull-left&quot; data-src=&quot;holder.js/50x50&quot; alt=&quot;...&quot;/&gt;
+            &lt;span class=&quot;display-block media-body &quot;&gt;
+                &lt;h5 class=&quot;innerT half&quot;&gt;Video Tutorial&lt;/h5&gt;
+                &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+                &lt;small class=&quot;text-center text-inverse muted&quot;&gt;&lt;i class=&quot;fa fa-fw fa-clock-o&quot;&gt;&lt;/i&gt; 5:15&lt;/small&gt;
+            &lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;!-- // END VIDEOS --&gt;
+
+</pre>
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="styles-b9b1b4579634e670d6c46e58790d51cf">
+
+                                        <p class="lead"><strong>Important note:</strong> By default, SMART is loading a complete stylesheet file that contains all the styles needed for the entire template. However, if you'd like to reduce bloat and load a minimal stylesheet with the required styles on each page of your application, follow along.</p>
+                                        <hr class="separator"/><br/>
+
+                                        <h4>Usage</h4>
+                                        <ol>
+                                            <li>Create a new LESS file <em>(e.g. styles.less)</em> and save it in the <code>assets/less</code> folder.</li>
+                                            <li>
+                                                <p>Copy &amp; paste the following imports in the LESS file you just created, in this order:</p>
+
+                                                                                                <div class="strong">CORE minimal styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/library/bootstrap/css/bootstrap.min.css&quot;;
+@import &quot;../assets/library/icons/fontawesome/assets/css/font-awesome.min.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_regular.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_social.css&quot;;
+@import &quot;../assets/library/icons/glyphicons/assets/css/glyphicons_filetypes.css&quot;;
+@import &quot;../assets/components/core/variables.less&quot;;
+@import &quot;../assets/components/core/mixins.less&quot;;
+@import &quot;../assets/components/core/scaffolding.less&quot;;
+@import &quot;../assets/components/core/helpers.less&quot;;</pre>
+                                                
+                                                <div class="strong">Component styles:</div>
+                                                <pre class="prettyprint">@import &quot;../assets/components/core/widgets.less&quot;;</pre>
+                                            </li>
+                                            <li>Place the file in your project's document root.</li>
+                                            <li>
+                                                Load the LESS file into the <code>&lt;head&gt;</code> section of your HTML document, before any JavaScript files: <p><pre class="prettyprint">&lt;link rel=&quot;stylesheet/less&quot; href=&quot;styles.less&quot; /&gt;</pre>
+</p>
+                                                <p><span class="label label-danger">NOTE</span>&nbsp; To include the LESS file directly, make sure the LESS.js library is also loaded in the <code>head</code> section of the template, otherwise compile the LESS file into CSS and include that file.</p>
+                                            </li>
+                                            <li>If you'd like to include other components on the same page, don't create multiple LESS files, but add all the imports in one file. You can create a LESS file for each page with just the resources used for that specific page, or you could create and use a single LESS file for the entire project.</li>
+                                            <li>In production, compile the LESS file and use the resulting minified CSS file in the HTML document.</li>
+                                        </ol>
+
+                                                                                <h4>Example</h4>
+                                        <p>See the <a href="../docs/examples/courses_widget_videos.html" target="_blank">Live Example</a> page and it's source for a minimal implementation of this component.</p>
+                                        
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="scripts-b9b1b4579634e670d6c46e58790d51cf">
+
+                                        <p class="lead"><strong>Important note:</strong> <code>&lt;filename&gt;.init.js</code> files are responsible for initializing and customizing the behaviour of the component and it's 3rd party assets.</p>
+
+                                        
+                                            <h3>Scripts</h3>
+                                            <p><span class="label label-default">BODY</span> You should include the following scripts at the end of the HTML document, right before the closing <code>&lt;/body&gt;</code> tag.</p>
+
+                                            <pre class="prettyprint">&lt;script src=&quot;../assets/plugins/media_holder/holder.js?v=v1.0.0-rc1&amp;amp;sv=v0.0.1.2&quot;&gt;&lt;/script&gt;</pre>
+
+                                    </div>
+                                    
+                                                                        <div class="tab-pane" id="resources-b9b1b4579634e670d6c46e58790d51cf">
+
+                                        <div class="panel panel-default"><div class="panel-body"><blockquote class="margin-none">
+					<i class="fa fa-fw fa-3x pull-left fa-code"></i>
+			<p><strong>Name:</strong> Holder | <strong>File</strong>: ../assets/plugins/media_holder/holder.js</p>
+			<p><strong>Description:</strong> Holder uses SVG and canvas to render image placeholders on the client side.</p>
+						
+		<p>		<strong>Version</strong>: 1.9		 | <strong>Official Website</strong>: <a href="https://github.com/imsky/holder" target="_blank">https://github.com/imsky/holder</a>		</p>
+		
+		
+		</blockquote></div></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                    </div>
+                                        
+        </div>
+        <!-- // END COL -->
+
+    </div>
+    <!-- // END ROW -->
+
+</div>
+<!-- // END INNER -->
+
+    <!-- Global -->
+    <script data-id="App.Config">
+        var App = {};        var basePath = '',
+            commonPath = '../assets/',
+            rootPath = '../',
+            DEV = false,
+            componentsPath = '../assets/components/';
+
+        var primaryColor = '#c72a25',
+            dangerColor = '#b55151',
+            successColor = '#609450',
+            infoColor = '#4a8bc2',
+            warningColor = '#ab7a4b',
+            inverseColor = '#45484d';
+
+        var themerPrimaryColor = primaryColor;
+
+            </script>
+
+    <script src="../assets/library/bootstrap/js/bootstrap.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/plugins/core_preload/pace.min.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core_preload/preload.pace.init.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/plugins/media_holder/holder.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core_docs/docs/assets/angular/app/ng.app.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core_docs/assets/angular/filters/ng.filter.isarray.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core_docs/assets/angular/controllers/ng.ctrl.components.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core_docs/docs/assets/angular/directives/ng.docs.directive.components.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/plugins/core_prettyprint/js/prettify.js?v=v1.0.0-rc1&amp;sv=v0.0.1.2"></script>
+<script src="../assets/components/core/core.init.js?v=v1.0.0-rc1"></script>
+</body>
+</html>
